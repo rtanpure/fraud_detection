@@ -1,37 +1,24 @@
-Fraud Detection ML App
-This is a simple machine learning application for fraud detection built using Streamlit.
+# Dataset Description
 
-Overview
-This application utilizes a trained machine learning model to predict fraud based on provided transaction details. The model predicts whether a transaction is fraudulent or not based on the type of transaction, amount, old balance, and new balance.
+## Overview
 
-Getting Started
-To run the application locally, follow these steps:
+This dataset contains information about fraudulent transactions collected over a period of six months. The data includes various features such as transaction type, transaction amount, old balance before the transaction, new balance after the transaction, and whether the transaction was flagged as fraudulent or not.
 
-Clone the repository:
-bash
-Copy code
-git clone https://github.com/your_username/fraud-detection.git
-Navigate to the project directory:
-bash
-Copy code
-cd fraud-detection
-Install the required dependencies:
-bash
-Copy code
-pip install streamlit numpy pandas
-Run the application:
-bash
-Copy code
-streamlit run app.py
-Usage
-Enter the type of transaction (1 to 5).
-Input the transaction amount.
-Provide the old balance before the transaction.
-Enter the new balance after the transaction.
-Click on the "Predict" button to see the prediction.
-Click on the "About" button to know more about the app.
-Model Details
-The application uses a pre-trained classifier model saved as classifier.pkl for fraud detection.
+## Content
 
-About
-This application is created by Rishabh Tanpure and is built with Streamlit.
+The dataset consists of the following columns:
+
+1. `TransactionID`: Unique identifier for each transaction.
+2. `TransactionType`: Type of transaction (e.g., 1 for transfer, 2 for payment).
+3. `Amount`: Amount of the transaction.
+4. `OldBalanceOrig`: Old balance before the transaction for the originating account.
+5. `NewBalanceOrig`: New balance after the transaction for the originating account.
+6. `OldBalanceDest`: Old balance before the transaction for the destination account.
+7. `NewBalanceDest`: New balance after the transaction for the destination account.
+8. `IsFraud`: Binary indicator (0 or 1) representing whether the transaction is fraudulent.
+9. `IsFlaggedFraud`: Binary indicator (0 or 1) representing whether the transaction was flagged as fraudulent by the system.
+
+## Acknowledgements
+
+The dataset is sourced from [XYZ Bank](https://www.xyzbank.com) and was collected for research purposes.
+
